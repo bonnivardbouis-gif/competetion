@@ -1,0 +1,11 @@
+# 语义检索后端（可选依赖）
+# 只在使用 EMBEDDER_BACKEND=semantic 时需要；默认 TF-IDF 后端不需要。
+#
+# 建议安装顺序（先装 CPU 版 torch，避免拉取数 GB 的 CUDA 版）：
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-semantic.txt
+#
+# 国内下载模型建议先设置镜像：
+#   set HF_ENDPOINT=https://hf-mirror.com          (Windows cmd)
+#   $env:HF_ENDPOINT="https://hf-mirror.com"       (PowerShell)
+sentence-transformers>=3.0

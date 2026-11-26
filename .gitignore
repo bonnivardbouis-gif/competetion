@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+*.npz
+.venv/
+venv/
+models/
+runtime/
+wheels/
+.knowledge_cache/
